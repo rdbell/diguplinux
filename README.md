@@ -7,14 +7,21 @@ exact words, images, PDF pages, code, and moments inside audio and video.
 Inspired by [DigUp](https://github.com/ARahim3/DigUp).
 
 <p align="center">
-  <img src="assets/demo.gif" alt="DigUp searches for rental agreements, invoices and travel notes in the Keystroke launcher" width="960">
+  <img src="assets/demo.gif" alt="Natural-language DigUp searches find a pet clause on PDF page 2, a paid repair invoice, a beep in audio and green hills in a video frame" width="960">
   <br>
-  <sub>Real Keystroke interface · sample documents · keyword-only search</sub>
+  <sub>Real Keystroke interface · synthetic files · semantic PDF, text, audio and video search</sub>
 </p>
 
 Use the CLI from your terminal or the included
 [Keystroke extension](extensions/keystroke-digup/README.md) from your launcher.
 Find a document by its contents, inspect the matching passage, and open the file.
+
+The demo queries describe content rather than filenames: “can I keep a dog”
+finds a clause about domestic animals on PDF page 2, “paid for computer repairs”
+finds a laptop repair invoice, “steady electronic beep” finds a recording, and
+“green hills under blue sky” finds a video frame. Audio is matched directly,
+without a transcript. Files open normally; the extension displays the matched
+page or timestamp but does not jump to it.
 
 This first version is a Python CLI with a native llama.cpp worker. It uses the
 same quantized EmbeddingGemma 2 model as DigUp. Indexing and search run locally;
@@ -320,12 +327,15 @@ Enter opens a result; Ctrl+Enter copies its path. Extension settings select
 CPU/GPU or keyword-only search and an optional alternate index directory.
 
 The [demo renderer](tools/render-demo.py) uses a separate offscreen Keystroke
-instance and a temporary keyword-only index of synthetic documents. To regenerate
-`assets/demo.gif`, install Quickshell, FFmpeg and `rsvg-convert`, then run:
+instance and a temporary semantic index of synthetic text, PDF, audio and video
+files. It checks the actual search rankings before recording. To regenerate
+`assets/demo.gif`, install Quickshell, FFmpeg, Poppler, `rsvg-convert` and DigUp's
+models and worker, then run:
 
 ```bash
 python3 tools/render-demo.py --digup /absolute/path/to/digup \
-  --keystroke /path/to/keystroke
+  --keystroke /path/to/keystroke --device gpu
 ```
 
 It does not read your personal index or change the running desktop shell.
+Use `--device cpu` if you do not have a GPU worker; rendering will take longer.
