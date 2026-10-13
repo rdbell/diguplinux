@@ -1,0 +1,778 @@
+[
+  {
+    "case": "constitution",
+    "input_bytes": 413949,
+    "scope": "full",
+    "cpu": {
+      "case": "constitution",
+      "device": "cpu",
+      "input_bytes": 413949,
+      "wall_seconds": 127.13277130199822,
+      "cpu_seconds": 943.702301,
+      "model_load_seconds": 0.49654021599963016,
+      "embedding_seconds": 126.07773161799742,
+      "extraction_seconds": 0.44285051099905104,
+      "other_seconds": 0.11564895700212219,
+      "embedding_counts": {
+        "image": 19,
+        "text": 54
+      },
+      "worker": {
+        "backend": "cpu",
+        "devices": [],
+        "dimension": 768,
+        "gpu": false,
+        "ready": true
+      },
+      "files": 1,
+      "segments": 73,
+      "vectors": 73,
+      "db_bytes": 581632,
+      "report": {
+        "indexed": 1,
+        "unchanged": 0,
+        "removed": 0,
+        "skipped": 0,
+        "errors": []
+      },
+      "pipeline": "eg2-q8-b11461-linux-v1",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "llama_revision": "4d756bc72bf00a4aacf410ae15a2d315f3db400d",
+      "threads": 8,
+      "video_interval": 5,
+      "audio_window": 30,
+      "audio_hop": 20
+    },
+    "gpu": {
+      "case": "constitution",
+      "device": "gpu",
+      "input_bytes": 413949,
+      "wall_seconds": 28.816248412000277,
+      "cpu_seconds": 4.650429999999915,
+      "model_load_seconds": 0.7332960029998503,
+      "embedding_seconds": 27.29998365598658,
+      "extraction_seconds": 0.5192019030000665,
+      "other_seconds": 0.26376685001378064,
+      "embedding_counts": {
+        "image": 19,
+        "text": 54
+      },
+      "worker": {
+        "backend": "vulkan",
+        "devices": [
+          "Apple M2 Max (G14C B1)"
+        ],
+        "dimension": 768,
+        "gpu": true,
+        "ready": true
+      },
+      "files": 1,
+      "segments": 73,
+      "vectors": 73,
+      "db_bytes": 581632,
+      "report": {
+        "indexed": 1,
+        "unchanged": 0,
+        "removed": 0,
+        "skipped": 0,
+        "errors": []
+      },
+      "pipeline": "eg2-q8-b11461-linux-v1",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "llama_revision": "4d756bc72bf00a4aacf410ae15a2d315f3db400d",
+      "threads": 8,
+      "video_interval": 5,
+      "audio_window": 30,
+      "audio_hop": 20
+    },
+    "speedup": 4.411843258855822,
+    "parity": {
+      "vectors_compared": 73,
+      "cosine_min": 0.9965922279632855,
+      "cosine_mean": 0.999714206914853
+    }
+  },
+  {
+    "case": "financial-times-text",
+    "input_bytes": 1040628,
+    "scope": "sample",
+    "cpu": {
+      "case": "financial-times-text",
+      "device": "cpu",
+      "input_bytes": 1040628,
+      "wall_seconds": 23.140857738000705,
+      "cpu_seconds": 170.049794,
+      "model_load_seconds": 0.37855798800046614,
+      "embedding_seconds": 22.663429684998846,
+      "extraction_seconds": 0.005332241995347431,
+      "other_seconds": 0.09353782300604507,
+      "embedding_counts": {
+        "text": 16
+      },
+      "worker": {
+        "backend": "cpu",
+        "devices": [],
+        "dimension": 768,
+        "gpu": false,
+        "ready": true
+      },
+      "files": 1,
+      "segments": 16,
+      "vectors": 16,
+      "db_bytes": 233472,
+      "report": {
+        "indexed": 1,
+        "unchanged": 0,
+        "removed": 0,
+        "skipped": 0,
+        "errors": []
+      },
+      "pipeline": "eg2-q8-b11461-linux-v1",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "llama_revision": "4d756bc72bf00a4aacf410ae15a2d315f3db400d",
+      "threads": 8,
+      "video_interval": 5,
+      "audio_window": 30,
+      "audio_hop": 20,
+      "scope": "sample",
+      "segment_limit": 16,
+      "media_window_start_limit_seconds": null
+    },
+    "gpu": {
+      "case": "financial-times-text",
+      "device": "gpu",
+      "input_bytes": 1040628,
+      "wall_seconds": 6.67787982200025,
+      "cpu_seconds": 2.245613999999989,
+      "model_load_seconds": 0.5514857689995551,
+      "embedding_seconds": 5.926200069994593,
+      "extraction_seconds": 0.005129030998432427,
+      "other_seconds": 0.1950649520076695,
+      "embedding_counts": {
+        "text": 16
+      },
+      "worker": {
+        "backend": "vulkan",
+        "devices": [
+          "Apple M2 Max (G14C B1)"
+        ],
+        "dimension": 768,
+        "gpu": true,
+        "ready": true
+      },
+      "files": 1,
+      "segments": 16,
+      "vectors": 16,
+      "db_bytes": 233472,
+      "report": {
+        "indexed": 1,
+        "unchanged": 0,
+        "removed": 0,
+        "skipped": 0,
+        "errors": []
+      },
+      "pipeline": "eg2-q8-b11461-linux-v1",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "llama_revision": "4d756bc72bf00a4aacf410ae15a2d315f3db400d",
+      "threads": 8,
+      "video_interval": 5,
+      "audio_window": 30,
+      "audio_hop": 20,
+      "scope": "sample",
+      "segment_limit": 16,
+      "media_window_start_limit_seconds": null
+    },
+    "speedup": 3.4653001184242993,
+    "parity": {
+      "vectors_compared": 16,
+      "cosine_min": 0.9998023627228741,
+      "cosine_mean": 0.9998817639260903
+    }
+  },
+  {
+    "case": "cover-1",
+    "input_bytes": 1948143,
+    "scope": "full",
+    "cpu": {
+      "case": "cover-1",
+      "device": "cpu",
+      "input_bytes": 1948143,
+      "wall_seconds": 4.675330313999439,
+      "cpu_seconds": 29.739953000000003,
+      "model_load_seconds": 0.48839732099986577,
+      "embedding_seconds": 3.801602121000542,
+      "extraction_seconds": 0.303433323999343,
+      "other_seconds": 0.08189754799968796,
+      "embedding_counts": {
+        "image": 1
+      },
+      "worker": {
+        "backend": "cpu",
+        "devices": [],
+        "dimension": 768,
+        "gpu": false,
+        "ready": true
+      },
+      "files": 1,
+      "segments": 1,
+      "vectors": 1,
+      "db_bytes": 53248,
+      "report": {
+        "indexed": 1,
+        "unchanged": 0,
+        "removed": 0,
+        "skipped": 0,
+        "errors": []
+      },
+      "pipeline": "eg2-q8-b11461-linux-v1",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "llama_revision": "4d756bc72bf00a4aacf410ae15a2d315f3db400d",
+      "threads": 8,
+      "video_interval": 5,
+      "audio_window": 30,
+      "audio_hop": 20,
+      "scope": "full",
+      "segment_limit": null,
+      "media_window_start_limit_seconds": null
+    },
+    "gpu": {
+      "case": "cover-1",
+      "device": "gpu",
+      "input_bytes": 1948143,
+      "wall_seconds": 2.0420733459995972,
+      "cpu_seconds": 1.1436399999999978,
+      "model_load_seconds": 0.6879766609999933,
+      "embedding_seconds": 0.9041361509989656,
+      "extraction_seconds": 0.2748110929987888,
+      "other_seconds": 0.17514944100184948,
+      "embedding_counts": {
+        "image": 1
+      },
+      "worker": {
+        "backend": "vulkan",
+        "devices": [
+          "Apple M2 Max (G14C B1)"
+        ],
+        "dimension": 768,
+        "gpu": true,
+        "ready": true
+      },
+      "files": 1,
+      "segments": 1,
+      "vectors": 1,
+      "db_bytes": 53248,
+      "report": {
+        "indexed": 1,
+        "unchanged": 0,
+        "removed": 0,
+        "skipped": 0,
+        "errors": []
+      },
+      "pipeline": "eg2-q8-b11461-linux-v1",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "llama_revision": "4d756bc72bf00a4aacf410ae15a2d315f3db400d",
+      "threads": 8,
+      "video_interval": 5,
+      "audio_window": 30,
+      "audio_hop": 20,
+      "scope": "full",
+      "segment_limit": null,
+      "media_window_start_limit_seconds": null
+    },
+    "speedup": 2.289501659261342,
+    "parity": {
+      "vectors_compared": 1,
+      "cosine_min": 0.9998609137965476,
+      "cosine_mean": 0.9998609137965476
+    }
+  },
+  {
+    "case": "cover-3",
+    "input_bytes": 2012105,
+    "scope": "full",
+    "cpu": {
+      "case": "cover-3",
+      "device": "cpu",
+      "input_bytes": 2012105,
+      "wall_seconds": 4.6013475180006935,
+      "cpu_seconds": 29.543443,
+      "model_load_seconds": 0.4756423709986848,
+      "embedding_seconds": 3.772603724999499,
+      "extraction_seconds": 0.2711858429993299,
+      "other_seconds": 0.08191557900318003,
+      "embedding_counts": {
+        "image": 1
+      },
+      "worker": {
+        "backend": "cpu",
+        "devices": [],
+        "dimension": 768,
+        "gpu": false,
+        "ready": true
+      },
+      "files": 1,
+      "segments": 1,
+      "vectors": 1,
+      "db_bytes": 53248,
+      "report": {
+        "indexed": 1,
+        "unchanged": 0,
+        "removed": 0,
+        "skipped": 0,
+        "errors": []
+      },
+      "pipeline": "eg2-q8-b11461-linux-v1",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "llama_revision": "4d756bc72bf00a4aacf410ae15a2d315f3db400d",
+      "threads": 8,
+      "video_interval": 5,
+      "audio_window": 30,
+      "audio_hop": 20,
+      "scope": "full",
+      "segment_limit": null,
+      "media_window_start_limit_seconds": null
+    },
+    "gpu": {
+      "case": "cover-3",
+      "device": "gpu",
+      "input_bytes": 2012105,
+      "wall_seconds": 2.025412420000066,
+      "cpu_seconds": 1.0488550000000032,
+      "model_load_seconds": 0.6872521669993148,
+      "embedding_seconds": 0.9086221899997327,
+      "extraction_seconds": 0.25016298499940604,
+      "other_seconds": 0.17937507800161256,
+      "embedding_counts": {
+        "image": 1
+      },
+      "worker": {
+        "backend": "vulkan",
+        "devices": [
+          "Apple M2 Max (G14C B1)"
+        ],
+        "dimension": 768,
+        "gpu": true,
+        "ready": true
+      },
+      "files": 1,
+      "segments": 1,
+      "vectors": 1,
+      "db_bytes": 53248,
+      "report": {
+        "indexed": 1,
+        "unchanged": 0,
+        "removed": 0,
+        "skipped": 0,
+        "errors": []
+      },
+      "pipeline": "eg2-q8-b11461-linux-v1",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "llama_revision": "4d756bc72bf00a4aacf410ae15a2d315f3db400d",
+      "threads": 8,
+      "video_interval": 5,
+      "audio_window": 30,
+      "audio_hop": 20,
+      "scope": "full",
+      "segment_limit": null,
+      "media_window_start_limit_seconds": null
+    },
+    "speedup": 2.2718076933687135,
+    "parity": {
+      "vectors_compared": 1,
+      "cosine_min": 0.9997358180686476,
+      "cosine_mean": 0.9997358180686476
+    }
+  },
+  {
+    "case": "cover-2",
+    "input_bytes": 4091545,
+    "scope": "full",
+    "cpu": {
+      "case": "cover-2",
+      "device": "cpu",
+      "input_bytes": 4091545,
+      "wall_seconds": 5.453661094001291,
+      "cpu_seconds": 31.989113999999987,
+      "model_load_seconds": 0.47313483099969744,
+      "embedding_seconds": 3.7673516140002903,
+      "extraction_seconds": 1.1352902889993857,
+      "other_seconds": 0.07788436000191723,
+      "embedding_counts": {
+        "image": 1
+      },
+      "worker": {
+        "backend": "cpu",
+        "devices": [],
+        "dimension": 768,
+        "gpu": false,
+        "ready": true
+      },
+      "files": 1,
+      "segments": 1,
+      "vectors": 1,
+      "db_bytes": 57344,
+      "report": {
+        "indexed": 1,
+        "unchanged": 0,
+        "removed": 0,
+        "skipped": 0,
+        "errors": []
+      },
+      "pipeline": "eg2-q8-b11461-linux-v1",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "llama_revision": "4d756bc72bf00a4aacf410ae15a2d315f3db400d",
+      "threads": 8,
+      "video_interval": 5,
+      "audio_window": 30,
+      "audio_hop": 20,
+      "scope": "full",
+      "segment_limit": null,
+      "media_window_start_limit_seconds": null
+    },
+    "gpu": {
+      "case": "cover-2",
+      "device": "gpu",
+      "input_bytes": 4091545,
+      "wall_seconds": 2.971421496999028,
+      "cpu_seconds": 3.6299610000000087,
+      "model_load_seconds": 0.6910994619993289,
+      "embedding_seconds": 0.9104019700007484,
+      "extraction_seconds": 1.192687893000766,
+      "other_seconds": 0.17723217199818464,
+      "embedding_counts": {
+        "image": 1
+      },
+      "worker": {
+        "backend": "vulkan",
+        "devices": [
+          "Apple M2 Max (G14C B1)"
+        ],
+        "dimension": 768,
+        "gpu": true,
+        "ready": true
+      },
+      "files": 1,
+      "segments": 1,
+      "vectors": 1,
+      "db_bytes": 57344,
+      "report": {
+        "indexed": 1,
+        "unchanged": 0,
+        "removed": 0,
+        "skipped": 0,
+        "errors": []
+      },
+      "pipeline": "eg2-q8-b11461-linux-v1",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "llama_revision": "4d756bc72bf00a4aacf410ae15a2d315f3db400d",
+      "threads": 8,
+      "video_interval": 5,
+      "audio_window": 30,
+      "audio_hop": 20,
+      "scope": "full",
+      "segment_limit": null,
+      "media_window_start_limit_seconds": null
+    },
+    "speedup": 1.8353710840112005,
+    "parity": {
+      "vectors_compared": 1,
+      "cosine_min": 0.9996681945557377,
+      "cosine_mean": 0.9996681945557377
+    }
+  },
+  {
+    "case": "financial-times-pdf",
+    "input_bytes": 23707822,
+    "scope": "sample",
+    "cpu": {
+      "case": "financial-times-pdf",
+      "device": "cpu",
+      "input_bytes": 23707822,
+      "wall_seconds": 9.423621104000631,
+      "cpu_seconds": 59.021748,
+      "model_load_seconds": 0.5075891140004387,
+      "embedding_seconds": 7.562074601997665,
+      "extraction_seconds": 1.2646324630040908,
+      "other_seconds": 0.08932492499843647,
+      "embedding_counts": {
+        "image": 1,
+        "text": 15
+      },
+      "worker": {
+        "backend": "cpu",
+        "devices": [],
+        "dimension": 768,
+        "gpu": false,
+        "ready": true
+      },
+      "files": 1,
+      "segments": 16,
+      "vectors": 16,
+      "db_bytes": 167936,
+      "report": {
+        "indexed": 1,
+        "unchanged": 0,
+        "removed": 0,
+        "skipped": 0,
+        "errors": []
+      },
+      "pipeline": "eg2-q8-b11461-linux-v1",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "llama_revision": "4d756bc72bf00a4aacf410ae15a2d315f3db400d",
+      "threads": 8,
+      "video_interval": 5,
+      "audio_window": 30,
+      "audio_hop": 20,
+      "scope": "sample",
+      "segment_limit": 16,
+      "media_window_start_limit_seconds": null
+    },
+    "gpu": {
+      "case": "financial-times-pdf",
+      "device": "gpu",
+      "input_bytes": 23707822,
+      "wall_seconds": 4.7239766379989305,
+      "cpu_seconds": 2.178994000000003,
+      "model_load_seconds": 0.6943167640001775,
+      "embedding_seconds": 2.5509550660062814,
+      "extraction_seconds": 1.2393200599963166,
+      "other_seconds": 0.23938474799615506,
+      "embedding_counts": {
+        "image": 1,
+        "text": 15
+      },
+      "worker": {
+        "backend": "vulkan",
+        "devices": [
+          "Apple M2 Max (G14C B1)"
+        ],
+        "dimension": 768,
+        "gpu": true,
+        "ready": true
+      },
+      "files": 1,
+      "segments": 16,
+      "vectors": 16,
+      "db_bytes": 167936,
+      "report": {
+        "indexed": 1,
+        "unchanged": 0,
+        "removed": 0,
+        "skipped": 0,
+        "errors": []
+      },
+      "pipeline": "eg2-q8-b11461-linux-v1",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "llama_revision": "4d756bc72bf00a4aacf410ae15a2d315f3db400d",
+      "threads": 8,
+      "video_interval": 5,
+      "audio_window": 30,
+      "audio_hop": 20,
+      "scope": "sample",
+      "segment_limit": 16,
+      "media_window_start_limit_seconds": null
+    },
+    "speedup": 1.9948492183891204,
+    "parity": {
+      "vectors_compared": 16,
+      "cosine_min": 0.9997653217290843,
+      "cosine_mean": 0.9998650951753035
+    }
+  },
+  {
+    "case": "podcast",
+    "input_bytes": 117360013,
+    "scope": "sample",
+    "cpu": {
+      "case": "podcast",
+      "device": "cpu",
+      "input_bytes": 117360013,
+      "wall_seconds": 9.50015730999985,
+      "cpu_seconds": 65.919373,
+      "model_load_seconds": 0.5007931720010674,
+      "embedding_seconds": 8.713254971000424,
+      "extraction_seconds": 0.20824260500012315,
+      "other_seconds": 0.07786656199823483,
+      "embedding_counts": {
+        "audio": 3
+      },
+      "worker": {
+        "backend": "cpu",
+        "devices": [],
+        "dimension": 768,
+        "gpu": false,
+        "ready": true
+      },
+      "files": 1,
+      "segments": 3,
+      "vectors": 3,
+      "db_bytes": 65536,
+      "report": {
+        "indexed": 1,
+        "unchanged": 0,
+        "removed": 0,
+        "skipped": 0,
+        "errors": []
+      },
+      "pipeline": "eg2-q8-b11461-linux-v1",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "llama_revision": "4d756bc72bf00a4aacf410ae15a2d315f3db400d",
+      "threads": 8,
+      "video_interval": 5,
+      "audio_window": 30,
+      "audio_hop": 20,
+      "scope": "sample",
+      "segment_limit": null,
+      "media_window_start_limit_seconds": 60.0
+    },
+    "gpu": {
+      "case": "podcast",
+      "device": "gpu",
+      "input_bytes": 117360013,
+      "wall_seconds": 3.1616316580002604,
+      "cpu_seconds": 1.5025190000000066,
+      "model_load_seconds": 0.7459688800008735,
+      "embedding_seconds": 1.9496635979994608,
+      "extraction_seconds": 0.23162969800068822,
+      "other_seconds": 0.2343694819992379,
+      "embedding_counts": {
+        "audio": 3
+      },
+      "worker": {
+        "backend": "vulkan",
+        "devices": [
+          "Apple M2 Max (G14C B1)"
+        ],
+        "dimension": 768,
+        "gpu": true,
+        "ready": true
+      },
+      "files": 1,
+      "segments": 3,
+      "vectors": 3,
+      "db_bytes": 65536,
+      "report": {
+        "indexed": 1,
+        "unchanged": 0,
+        "removed": 0,
+        "skipped": 0,
+        "errors": []
+      },
+      "pipeline": "eg2-q8-b11461-linux-v1",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "llama_revision": "4d756bc72bf00a4aacf410ae15a2d315f3db400d",
+      "threads": 8,
+      "video_interval": 5,
+      "audio_window": 30,
+      "audio_hop": 20,
+      "scope": "sample",
+      "segment_limit": null,
+      "media_window_start_limit_seconds": 60.0
+    },
+    "speedup": 3.004827360568853,
+    "parity": {
+      "vectors_compared": 3,
+      "cosine_min": 0.9995346765109024,
+      "cosine_mean": 0.9997140065918355
+    }
+  },
+  {
+    "case": "video",
+    "input_bytes": 141646238,
+    "scope": "sample",
+    "cpu": {
+      "case": "video",
+      "device": "cpu",
+      "input_bytes": 141646238,
+      "wall_seconds": 60.2369187029999,
+      "cpu_seconds": 441.78654700000004,
+      "model_load_seconds": 0.4901796270005434,
+      "embedding_seconds": 58.69297837499653,
+      "extraction_seconds": 0.9681009549967712,
+      "other_seconds": 0.08565974600605841,
+      "embedding_counts": {
+        "audio": 3,
+        "image": 12
+      },
+      "worker": {
+        "backend": "cpu",
+        "devices": [],
+        "dimension": 768,
+        "gpu": false,
+        "ready": true
+      },
+      "files": 1,
+      "segments": 15,
+      "vectors": 15,
+      "db_bytes": 114688,
+      "report": {
+        "indexed": 1,
+        "unchanged": 0,
+        "removed": 0,
+        "skipped": 0,
+        "errors": []
+      },
+      "pipeline": "eg2-q8-b11461-linux-v1",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "llama_revision": "4d756bc72bf00a4aacf410ae15a2d315f3db400d",
+      "threads": 8,
+      "video_interval": 5,
+      "audio_window": 30,
+      "audio_hop": 20,
+      "scope": "sample",
+      "segment_limit": null,
+      "media_window_start_limit_seconds": 60.0
+    },
+    "gpu": {
+      "case": "video",
+      "device": "gpu",
+      "input_bytes": 141646238,
+      "wall_seconds": 15.174377522998839,
+      "cpu_seconds": 3.7447099999999978,
+      "model_load_seconds": 0.7053351260001364,
+      "embedding_seconds": 13.067526937002185,
+      "extraction_seconds": 1.1700065459990583,
+      "other_seconds": 0.23150891399745888,
+      "embedding_counts": {
+        "audio": 3,
+        "image": 12
+      },
+      "worker": {
+        "backend": "vulkan",
+        "devices": [
+          "Apple M2 Max (G14C B1)"
+        ],
+        "dimension": 768,
+        "gpu": true,
+        "ready": true
+      },
+      "files": 1,
+      "segments": 15,
+      "vectors": 15,
+      "db_bytes": 114688,
+      "report": {
+        "indexed": 1,
+        "unchanged": 0,
+        "removed": 0,
+        "skipped": 0,
+        "errors": []
+      },
+      "pipeline": "eg2-q8-b11461-linux-v1",
+      "model_revision": "bfcd298762cc34d0357ece5ebdd31791a3a374d8",
+      "llama_revision": "4d756bc72bf00a4aacf410ae15a2d315f3db400d",
+      "threads": 8,
+      "video_interval": 5,
+      "audio_window": 30,
+      "audio_hop": 20,
+      "scope": "sample",
+      "segment_limit": null,
+      "media_window_start_limit_seconds": 60.0
+    },
+    "speedup": 3.9696467688182024,
+    "parity": {
+      "vectors_compared": 15,
+      "cosine_min": 0.9997219678057846,
+      "cosine_mean": 0.9998743982173258
+    }
+  }
+]

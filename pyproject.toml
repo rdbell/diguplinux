@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diguplinux"
+version = "0.1.0"
+description = "Local multimodal file search for Linux"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+dependencies = []
+
+[project.scripts]
+digup = "diguplinux.cli:main"
+
+[tool.setuptools.package-data]
+diguplinux = ["native/*"]
+
+[tool.ruff]
+line-length = 110
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "constitution",
+    "url": "https://constitutioncenter.org/media/files/constitution.pdf",
+    "bytes": 413949,
+    "md5": "25e06f221234c51391aaa07057f33e03",
+    "filename": "constitution.pdf"
+  },
+  {
+    "id": "financial-times-text",
+    "url": "https://archive.org/download/FinancialTimes1989UKEnglish/Apr%2002%201989%2C%20Financial%20Times%2C%20%2330807%2C%20UK%20%28en%29_djvu.txt",
+    "bytes": 1040628,
+    "md5": "61ac8ebe0fab1b510bff9b8126180f58",
+    "filename": "financial-times.txt"
+  },
+  {
+    "id": "cover-1",
+    "url": "https://archive.org/download/nirvana-co-et-cetera-covers/Et%20Cetera%20%282%29.png",
+    "bytes": 1948143,
+    "md5": "3c46fc3045998a06e66014ac228581d5",
+    "filename": "cover-1.png"
+  },
+  {
+    "id": "cover-3",
+    "url": "https://archive.org/download/nirvana-co-et-cetera-covers/Untitled%20design_20250103_193949_0000%20%281%29.png",
+    "bytes": 2012105,
+    "md5": "c4886b395ed188b6ebff4339304204b6",
+    "filename": "cover-3.png"
+  },
+  {
+    "id": "cover-2",
+    "url": "https://archive.org/download/nirvana-co-et-cetera-covers/Et%20Cetera%20%283%29.png",
+    "bytes": 4091545,
+    "md5": "9c4be1f3890333f93c6b6d18ca2f3036",
+    "filename": "cover-2.png"
+  },
+  {
+    "id": "financial-times-pdf",
+    "url": "https://archive.org/download/FinancialTimes1989UKEnglish/Apr%2002%201989%2C%20Financial%20Times%2C%20%2330807%2C%20UK%20%28en%29_text.pdf",
+    "bytes": 23707822,
+    "md5": "a36b37efe6ef216637650349723d29a3",
+    "filename": "financial-times.pdf"
+  },
+  {
+    "id": "podcast",
+    "url": "https://archive.org/download/TheJoeRoganExperiencePodcast1465/JRE-Podcast-1.mp3",
+    "bytes": 117360013,
+    "md5": "9e1d3ac2b4fab7898eb3fdd001eaaf9e",
+    "filename": "podcast.mp3"
+  },
+  {
+    "id": "video",
+    "url": "https://archive.org/download/the-looney-tunes-show-season-2-of-2-mkv/The%20Looney%20Tunes%20Show%20-%20S02E01%20-%20Bobcats%20On%20Three.mp4",
+    "bytes": 141646238,
+    "md5": "97f9de752de78a276799eda9d4089a65",
+    "filename": "looney-tunes.mp4"
+  }
+]

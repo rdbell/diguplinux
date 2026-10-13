@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="680" viewBox="0 0 960 680">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#172b4c"/>
+      <stop offset=".52" stop-color="#344868"/>
+      <stop offset="1" stop-color="#8e687b"/>
+    </linearGradient>
+    <radialGradient id="light" cx=".86" cy=".2" r=".8">
+      <stop stop-color="#efac83" stop-opacity=".62"/>
+      <stop offset="1" stop-color="#efac83" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ridge" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#657e96"/>
+      <stop offset="1" stop-color="#344864"/>
+    </linearGradient>
+    <linearGradient id="foreground" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#16475c"/>
+      <stop offset="1" stop-color="#17334b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h960v680H0z"/>
+  <path fill="url(#light)" d="M0 0h960v680H0z"/>
+  <path fill="#dcb6ab" opacity=".16" d="M0 398C205 318 384 450 580 329S858 284 960 248V680H0z"/>
+  <path fill="url(#ridge)" d="M0 416C150 349 314 527 538 407S805 378 960 316V680H0z"/>
+  <path fill="#243b59" opacity=".64" d="M0 534C196 433 321 581 553 482S824 464 960 407V680H0z"/>
+  <path fill="url(#foreground)" d="M0 579C218 489 353 656 601 551S832 552 960 494V680H0z"/>
+  <path fill="#102737" opacity=".5" d="M0 650C221 577 471 704 664 611S858 640 960 597V680H0z"/>
+  <rect x="152" y="80" width="656" height="540" rx="10" fill="#000" opacity=".46" filter="url(#shadow)"/>
+</svg>

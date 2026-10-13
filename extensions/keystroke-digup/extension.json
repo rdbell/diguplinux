@@ -1,0 +1,30 @@
+{
+  "name": "DigUp",
+  "version": "0.1.0",
+  "author": "DigUpLinux contributors",
+  "description": "Search local files by meaning and exact words",
+  "apiVersion": 1,
+  "icon": "\udb80\ude1e",
+  "color": "#61afef",
+  "entry": "Service.qml",
+  "license": "MIT",
+  "commands": [
+    {
+      "id": "search",
+      "prefix": "digup",
+      "title": "Search DigUp",
+      "summary": "Find an indexed document, image, audio clip or code file",
+      "args": [
+        {
+          "name": "query",
+          "hint": "describe a file or its contents",
+          "rest": true
+        }
+      ],
+      "examples": [
+        "digup rental agreement",
+        "digup code: retry"
+      ]
+    }
+  ]
+}

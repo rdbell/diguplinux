@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+"""Link this checkout into Keystroke's local extensions directory."""
+from pathlib import Path
+
+source = Path(__file__).resolve().parent.parent
+# Keystroke API 1 currently scans this HOME-relative path, not XDG_DATA_HOME.
+target = Path.home() / ".local/share/keystroke/extensions/keystroke-digup"
+target.parent.mkdir(parents=True, exist_ok=True)
+if target.is_symlink() and target.resolve() == source:
+    print("DigUp extension is already linked.")
+elif target.exists() or target.is_symlink():
+    raise SystemExit(f"Refusing to replace existing extension: {target}")
+else:
+    target.symlink_to(source, target_is_directory=True)
+    print(f"Linked DigUp extension: {target}")
+print("Open Keystroke, type ext, choose DigUp, and enable it.")
+print("Then type: digup <query>")
